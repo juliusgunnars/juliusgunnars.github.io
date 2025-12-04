@@ -1,0 +1,173 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    
+    background-color: #8c352d;
+}
+
+main {
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+    
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+aside {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+
+    margin: 20px;
+    padding-bottom: 10px;
+
+    border-radius: 15px;
+    background-color: #692822;
+}
+
+aside a {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+header {
+    background-image: url("myndir/Eminem.webp");
+
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    padding-top: 30px;
+}
+
+header h1 {
+    color: white;
+    font-size: 8rem;
+    text-shadow: 0 -2px 12px rgb(255, 0, 0);
+
+    padding: 30px;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 150px;
+
+    display:flex;
+    flex-flow:column;    
+
+    gap: 1px;
+
+    background-color:#692822;
+}
+
+header nav a {
+    flex-grow: 1;
+    padding: 30px;
+
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+    background-color:#8c352d;
+}
+
+figure {
+    width: 100%
+}
+
+main iframe {
+    width:100%;
+    height: 100%
+}
+
+.YouTube {
+    max-width: 560px; 
+    height: 315px;
+}
+
+.Kort {
+    min-height: 400px;
+}
+
+footer {
+    background-color: tan;
+    background-image: linear-gradient(to bottom, #8c352d, #cb4134);
+    padding: 10px;
+
+    color: rgb(230, 230, 230);
+}
+
+footer a {
+    color: white
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: 0 50%;
+}
+
+.footer h4 {
+    text-align: center;
+}
+
+.Spotify {
+    display:flex;
+    justify-content: center;
+
+    padding: 20px;
+}
+.Spotify iframe {
+    max-width: 1200px;
+}
+
+.center {
+    display:flex;
+    justify-content: center;
+}
+.text-center {
+    text-align: center;
+}
+
+.copy {
+    text-align: center;
+    font-size: large;
+}
+
+/* Media */
+
+@media screen and (min-width:48em) {
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0;
+    }
+
+    header nav {
+        flex-flow:row;
+    }
+
+}
+@media screen and (min-width:60em) {
+    article {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width:80em) {
+    main {
+        grid-template-columns: 3fr 1fr;
+    }
+}
+@media screen and (min-width:100em) {
+
+}
